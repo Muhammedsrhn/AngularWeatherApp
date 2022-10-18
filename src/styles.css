@@ -1,1 +1,166 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    size: 1rem;
+    width: 100%;
+    height: 100vh;
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    width: 350px;
+    height: 80vh;
+    background-color: #232983;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px #3C429E;
+
+}
+
+.upper-data img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.upper-data {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.weather-data {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.location {
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.tempature {
+    color: #fff;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+.lower-data {}
+
+/*  */
+
+.more-info-label {
+    color: #fff;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    margin: 30px;
+}
+
+.more-info-container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.info-block-label {
+    width: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-block-label img {
+    width: 1em;
+}
+
+.info-block-label span {
+    color: #fff;
+    font-size: 0.8em;
+    padding-left: 8px;
+}
+
+.info-block-value {
+    width: 50%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.info-block-value pre {
+    font-size: 1rem;
+}
+
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 0px 20px 0px 20px;
+    font-size: 1em;
+    outline: none;
+    transition: all 0.7s;
+    opacity: 0.9;
+    text-align: center;
+}
+
+::placeholder {
+    color: #333;
+    text-align: center;
+}
+
+.search-bar form {
+    width: 100%;
+}
+
+.search-bar input:focus {
+    border-radius: 20px 0px 20px 0px;
+    opacity: 1;
+}
+
